@@ -1,0 +1,109 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #eee;
+    font-family: sans-serif;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100vh;
+}
+
+div.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0.1px;
+    margin-top: 50px;
+}
+
+.title {
+    margin-top: 30px;
+}
+
+div.container-buttons {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 50px 0;
+    background-color: #EFECEF;
+    border-radius: 15px;
+    box-shadow: 5px 5px 20px #000;
+    padding: 30px 20px;
+}
+
+.buttons {
+    display: flex;
+}
+
+.container-records {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 20px;
+}
+
+#player, #machine {
+    font-size: 16px;
+    background-color: #EFECEF;
+    box-shadow: 2px 2px 10px #000;
+    padding: 10px 15px;
+    border-radius: 20px;
+
+}
+
+.container-buttons .button {
+    margin: 0 50px;
+    padding: 50px;
+    border-radius: 100%;
+    cursor: pointer;
+    background-color: #fff;
+    font-size: 17px;
+    font-weight: bold;
+    transition: all 0.2s;
+   
+}
+
+.pressButton {
+    transform: scale(1.1);
+    box-shadow: 5px 5px 20px #000;
+}
+
+.container-buttons #rock {
+    border: 5px solid #ff0000;
+}
+
+.container-buttons #paper {
+    border: 5px solid #00ff00;
+}
+
+.container-buttons #scissors {
+    border: 5px solid #0000ff;
+}
+
+.announceWinner {
+    font-size: 29px;
+    color: #ff0000;
+    text-shadow: 2px 2px 10px #ffff00;
+    font-weight: bold;
+    display: none;
+    transition: all 3s;
+}
+
+.finalRecord {
+    font-size: 29px;
+    color: #ff0000;
+    text-shadow: 2px 2px 10px #ffff00;
+    font-weight: bold;
+}
+
+footer {
+    display: flex;
+    justify-content: center;
+    padding: 10px;
+    background-color: #EFECEF;
+}
+
